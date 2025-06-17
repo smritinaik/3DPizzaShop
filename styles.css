@@ -5,6 +5,8 @@
 
 body {
     background-color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 /* ---------------------------------------HERO SECTION------------------------ */
@@ -42,6 +44,7 @@ model-viewer {
     height: 20vw;
 }
 
+
 /* Media Queries HERO SEC */
 @media (max-width : 780px) {
     .hero_container {
@@ -68,3 +71,28 @@ model-viewer {
         height: 50vh;
     }
 }
+
+
+/*-------- enquiry_btn ----- */
+
+.enquiry_btn {
+    color: aliceblue;
+    background: transparent;
+    padding: 10px 25px;
+    border-radius: 16px;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    border: 1.4px solid rgb(231, 182, 92);
+    cursor: pointer;
+    transition: all 0.8s ease-in-out 0.4;
+    box-shadow: 0 0 5px rgb(255, 182, 46);
+}
+
+.enquiry_btn:hover {
+    color: rgb(0, 0, 0);
+    background: rgb(222, 177, 93);
+    box-shadow: 0 0 25px rgb(251, 164, 1);
+}
+
+/* -------- */
