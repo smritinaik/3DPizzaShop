@@ -9,6 +9,116 @@ body {
 
 }
 
+
+
+
+
+/* ---------NAV BAR ---------- */
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  max-width: 1200px;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1.2px solid rgb(212, 184, 132);
+  border-radius: 39px;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* will be a image */
+.nav-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: wheat;
+  text-shadow: 0 0 10px #d4af3799;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #d4af37;
+  transition:  0.3s;
+}
+
+.nav-links li a:hover {
+  color: #d4af37;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+.nav-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: #d4af37;
+  cursor: pointer;
+}
+
+/* Mobile Responsive for nav */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    padding: 15px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 180px;
+    gap: 1rem;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+
+
+
+
+/* ---------------------------------------------------------------------- */
+
+
+
+
 /* ---------------------------------------HERO SECTION------------------------ */
 
 .hero_container {
@@ -18,7 +128,6 @@ body {
     height: 90vh;
     padding: 6px 5%;
     box-sizing: border-box;
-
 }
 
 .left_content {
@@ -63,14 +172,17 @@ model-viewer {
 
     .heading {
         font-size: 2.8rem;
+        padding-bottom: 0;
+        margin: 5px;
     }
 
     .para {
         font-size: 1rem;
-        margin-bottom: 20px;
+        margin-bottom: 19px;
     }
 
     model-viewer {
+        padding-top: 16vw;
         width: 85vw;
         height: 50vh;
     }
