@@ -44,8 +44,8 @@ body {
 }
 
 model-viewer {
-    width: 100vw;
-    height: 20vw;
+    width: 109vw;
+    height: 25vw;
 }
 
 
@@ -71,7 +71,7 @@ model-viewer {
     }
 
     model-viewer {
-        width: 100vw;
+        width: 85vw;
         height: 50vh;
     }
 }
