@@ -16,13 +16,13 @@ body {
     align-items: center;
     justify-content: center;
     height: 90vh;
-    padding: 0 5%;
+    padding: 6px 5%;
     box-sizing: border-box;
 
 }
 
 .left_content {
-    max-width: 45%;
+    max-width: 40%;
 }
 
 .heading {
@@ -45,7 +45,7 @@ body {
 
 model-viewer {
     width: 109vw;
-    height: 25vw;
+    height: 35vw;
 }
 
 
