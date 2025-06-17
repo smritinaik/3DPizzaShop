@@ -44,7 +44,7 @@ body {
 }
 
 model-viewer {
-    width: 99vw;
+    width: 100vw;
     height: 20vw;
 }
 
@@ -80,7 +80,7 @@ model-viewer {
 /*-------- enquiry_btn ----- */
 
 .enquiry_btn {
-    color: aliceblue;
+    color: wheat;
     background: transparent;
     padding: 10px 25px;
     border-radius: 16px;
