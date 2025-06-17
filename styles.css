@@ -26,10 +26,12 @@ body {
 }
 
 .heading {
-    font-size: 4rem;
+    font-size: 4.8rem;
     color: wheat;
     letter-spacing: 2.5px;
     margin-bottom: 40px;
+    transform: all 0.3 ease-in;
+    text-shadow: 0 0  40px rgb(255, 173, 22),  0 0 11px rgb(226, 86, 21);
 }
 
 .para {
@@ -37,6 +39,8 @@ body {
     word-spacing: 3px;
     color: wheat;
     margin-bottom: 30px;
+    transform: all 0.3 ease-in;
+
 }
 
 model-viewer {
@@ -85,7 +89,7 @@ model-viewer {
     font-weight: bolder;
     border: 1.4px solid rgb(231, 182, 92);
     cursor: pointer;
-    transition: all 0.8s ease-in-out 0.4;
+    transition: all 0.1s ease;
     box-shadow: 0 0 5px rgb(255, 182, 46);
 }
 
