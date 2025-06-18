@@ -125,7 +125,7 @@ body {
 }
 
 .heading {
-  font-family: 'Ranchers', cursive;
+  font-family: 'Ranchers', sans-serif;
   font-size: 4.8rem;
   color: #ffebc1;
   letter-spacing: 2.5px;
@@ -166,8 +166,6 @@ model-viewer {
     font-size: 4.5rem;
     padding-bottom: 0;
     margin: 5px;
-    font-family: 'Ranchers', cursive;
-
   }
 
   .para {
@@ -208,7 +206,7 @@ model-viewer {
 
 /* ------------MENU-------------- */
 
-.menu_heading{
+.menu_heading {
   font-size: 2rem;
   color: #ff7043;
   letter-spacing: 4px;
