@@ -165,9 +165,12 @@ model-viewer {
     font-size: 4.5rem;
     padding-bottom: 0;
     margin: 5px;
+    font-family: 'Ranchers', cursive;
+
   }
 
   .para {
+    font-family: 'Ranchers', cursive;
     font-size: 1rem;
     margin-bottom: 19px;
   }
@@ -208,7 +211,7 @@ model-viewer {
   font-size: 2rem;
   color: #ff7043;
   letter-spacing: 4px;
-  padding-top: 8%;
+  padding-top: 12%;
   display: flex;
   justify-content: center;
   align-items: center;
