@@ -1,17 +1,12 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color: rgb(0, 0, 0);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+  font-family: 'Ranchers', cursive;
+  background-color: #1a0000;
 }
-
-
-
-
 
 /* ---------NAV BAR ---------- */
 
@@ -23,9 +18,10 @@ body {
   transform: translateX(-50%);
   width: 85%;
   max-width: 1200px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(26, 0, 0, 0.6);
+  /* same tone as body, transparent */
   backdrop-filter: blur(10px);
-  border: 1.2px solid rgb(212, 184, 132);
+  border: 1.2px solid #ff6f00;
   border-radius: 39px;
   padding: 10px 20px;
   z-index: 1000;
@@ -38,12 +34,12 @@ body {
 }
 
 /* will be a image */
-.nav-logo {
+/* .nav-logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: wheat;
-  text-shadow: 0 0 10px #d4af3799;
-}
+  color: #ffd54f;
+  text-shadow: 0 0 10px #ff6f00aa;
+} */
 
 .nav-links {
   list-style: none;
@@ -54,7 +50,7 @@ body {
 }
 
 .nav-links li a {
-  color: #ffffff;
+  color: #fff8e1;
   text-decoration: none;
   font-weight: 500;
   position: relative;
@@ -68,12 +64,12 @@ body {
   bottom: -4px;
   width: 0%;
   height: 2px;
-  background: #d4af37;
-  transition:  0.3s;
+  background: #ff6f00;
+  transition: 0.3s;
 }
 
 .nav-links li a:hover {
-  color: #d4af37;
+  color: #ff6f00;
 }
 
 .nav-links li a:hover::after {
@@ -83,7 +79,7 @@ body {
 .nav-toggle {
   display: none;
   font-size: 1.8rem;
-  color: #d4af37;
+  color: #ff6f00;
   cursor: pointer;
 }
 
@@ -96,7 +92,7 @@ body {
   .nav-links {
     display: none;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(26, 0, 0, 0.9);
     border-radius: 10px;
     padding: 15px;
     position: absolute;
@@ -111,104 +107,97 @@ body {
   }
 }
 
-
-
-
 /* ---------------------------------------------------------------------- */
-
-
-
 
 /* ---------------------------------------HERO SECTION------------------------ */
 
 .hero_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 90vh;
-    padding: 6px 5%;
-    box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  padding: 6px 5%;
+  box-sizing: border-box;
 }
 
 .left_content {
-    max-width: 40%;
+  max-width: 40%;
 }
 
 .heading {
-    font-size: 4.8rem;
-    color: wheat;
-    letter-spacing: 2.5px;
-    margin-bottom: 40px;
-    transform: all 0.3 ease-in;
-    text-shadow: 0 0  40px rgb(255, 173, 22),  0 0 11px rgb(226, 86, 21);
+  font-size: 4.8rem;
+  color: #ffebc1;
+  letter-spacing: 2.5px;
+  margin-bottom: 40px;
+  transform: all 0.3 ease-in;
+  text-shadow:
+    0 0 10px #ff6f00,
+    0 0 25px #d84315,
+    0 0 45px #ff5722;
 }
 
 .para {
-    font-size: 1.1rem;
-    word-spacing: 3px;
-    color: wheat;
-    margin-bottom: 30px;
-    transform: all 0.3 ease-in;
-
+  font-size: 1.1rem;
+  word-spacing: 3px;
+  color: #eeca90;
+  margin-bottom: 30px;
+  transform: all 0.3 ease-in;
 }
 
 model-viewer {
-    width: 109vw;
-    height: 35vw;
+  width: 109vw;
+  height: 35vw;
 }
-
 
 /* Media Queries HERO SEC */
 @media (max-width : 780px) {
-    .hero_container {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
+  .hero_container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 
-    .left_content {
-        max-width: 90%;
-        text-align: center;
-    }
+  .left_content {
+    max-width: 90%;
+    text-align: center;
+  }
 
-    .heading {
-        font-size: 2.8rem;
-        padding-bottom: 0;
-        margin: 5px;
-    }
+  .heading {
+    font-size: 4.5rem;
+    padding-bottom: 0;
+    margin: 5px;
+  }
 
-    .para {
-        font-size: 1rem;
-        margin-bottom: 19px;
-    }
+  .para {
+    font-size: 1rem;
+    margin-bottom: 19px;
+  }
 
-    model-viewer {
-        padding-top: 16vw;
-        width: 85vw;
-        height: 50vh;
-    }
+  model-viewer {
+    padding-top: 16vw;
+    width: 85vw;
+    height: 50vh;
+  }
 }
 
 
 /*-------- enquiry_btn ----- */
 
 .enquiry_btn {
-    color: wheat;
-    background: transparent;
-    padding: 10px 25px;
-    border-radius: 16px;
-    font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bolder;
-    border: 1.4px solid rgb(231, 182, 92);
-    cursor: pointer;
-    transition: all 0.1s ease;
-    box-shadow: 0 0 5px rgb(255, 182, 46);
+  font-family: 'Ranchers', cursive;
+  color: #eeca90;
+  background: transparent;
+  padding: 10px 25px;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: bolder;
+  border: 1.4px solid #ff6f00;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  box-shadow: 0 0 5px #ff6f00aa;
 }
 
 .enquiry_btn:hover {
-    color: rgb(0, 0, 0);
-    background: rgb(222, 177, 93);
-    box-shadow: 0 0 25px rgb(251, 164, 1);
+  color: #1a0000;
+  background: #ff892f;
+  box-shadow: 0 0 25px #ff6f00aa;
 }
-
-/* -------- */

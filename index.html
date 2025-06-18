@@ -2,18 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3dPizzaShop</title>
-    <link rel="stylesheet" href="styles.css">
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3dPizzaShop</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
 </head>
 
 <body>
 
 
 
-    
+
 
 
 
@@ -21,7 +22,7 @@
 
   <nav class="navbar">
     <div class="nav-container">
-      <div class="nav-logo">logo</div>
+      <div class="nav-logo"> <img src="assets/logo.png" height="48spx" alt="pizza"> </div>
       <div class="nav-toggle" id="navToggle">&#9776;</div>
       <ul class="nav-links" id="navLinks">
         <li><a href="#">Home</a></li>
@@ -40,25 +41,25 @@
 
 
 
-    <!-- HERO SECTION -->
-    <div class="hero_container">
+  <!-- HERO SECTION -->
+  <div class="hero_container">
 
-        <div class="left_content">
-            <h1 class="heading">Pizzzza</h1>
-            <p class="para">Craving a slice of heaven? At Pizzzza, we serve hot, cheesy, and freshly baked pizzas that
-                melt in your mouth! Whether you love classic Margherita or loaded toppings, we’ve got something to
-                satisfy every craving. Dive into flavor — one bite at a time!</p>
-            <button class="enquiry_btn">Contact</button>
-
-        </div>
-
-        <model-viewer src="3dModels/pizza.glb" camera-controls auto-rotate autoplay field-of-view="39deg"
-            field-of-view="35deg" camera-orbit="40deg 59deg" shadow-intensity="1" exposure="1.2"
-            environment-image="neutral" background-color="#ffffff">
-        </model-viewer>
+    <div class="left_content">
+      <h1 class="heading">Pizzzza</h1>
+      <p class="para">Craving a slice of heaven? At Pizzzza, we serve hot, cheesy, and freshly baked pizzas that
+        melt in your mouth! Whether you love classic Margherita or loaded toppings, we’ve got something to
+        satisfy every craving. Dive into flavor — one bite at a time!</p>
+      <button class="enquiry_btn">Contact</button>
 
     </div>
-    <!-- ---------- -->
+
+    <model-viewer src="3dModels/pizza.glb" camera-controls auto-rotate autoplay field-of-view="39deg"
+      field-of-view="35deg" camera-orbit="40deg 59deg" shadow-intensity="1" exposure="1.2" environment-image="neutral"
+      background-color="#ffffff">
+    </model-viewer>
+
+  </div>
+  <!-- ---------- -->
 
 </body>
 
