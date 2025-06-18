@@ -212,4 +212,5 @@ model-viewer {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-shadow: 0 0 9px #d6951e;
 }
