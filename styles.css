@@ -201,3 +201,15 @@ model-viewer {
   background: #ff892f;
   box-shadow: 0 0 25px #ff6f00aa;
 }
+
+/* ------------MENU-------------- */
+
+.menu_heading{
+  font-size: 2rem;
+  color: #ff7043;
+  letter-spacing: 4px;
+  padding-top: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
