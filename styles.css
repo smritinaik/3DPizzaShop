@@ -4,7 +4,7 @@
 }
 
 body {
-font-family: 'Trebuchet MS', sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
   background-color: #1a0000;
 }
 
@@ -212,4 +212,17 @@ model-viewer {
   justify-content: center;
   align-items: center;
   text-shadow: 0 0 9px #d6951e;
+}
+
+
+.menu_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 5%;
+  box-sizing: border-box;
+}
+
+.menu_items {
+  max-width: 40%;
 }
