@@ -223,7 +223,7 @@ model-viewer {
 }
 
 .menu_items {
-  max-width: 990px;
+  max-width: 1200px;
   width: 100%;
   padding: 0 20px;
 }
@@ -289,7 +289,7 @@ model-viewer {
 @media (max-width: 768px) {
   .menu_container {
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     text-align: center;
   }
 
@@ -307,14 +307,15 @@ model-viewer {
     width: 100%;
   }
 
-  .list li {
+ .list li {
     flex-direction: column;
     align-items: flex-start;
-    gap: 5px;
+    gap: 4px;
   }
 
   .item-price {
     align-self: flex-end;
+    font-size: 1rem;
   }
 }
 
