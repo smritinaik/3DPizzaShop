@@ -215,50 +215,106 @@ model-viewer {
 }
 .menu_container {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 6px 5%;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 5%;
   box-sizing: border-box;
-  gap: 40px; /* space between text and image */
+  min-height: 70vh; /* or 100vh for full center */
 }
 
-/* Left side menu list */
 .menu_items {
-  max-width: 45%;
+  max-width: 990px;
+  width: 100%;
+  padding: 0 20px;
 }
 
-.menu_items ul {
-  list-style-type: disc;
-  padding-left: 20px;
+
+.list {
+  list-style: none;
+  padding: 0 20px;
   color: #fff8e1;
-  font-size: 1.2rem;
-  line-height: 2.2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  width: 100%;
 }
 
-/* Right side image */
+.list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed #ff6f00;
+  padding: 10px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: transform 0.2s ease, text-shadow 0.2s ease;
+  text-shadow:
+    0 0 5px #ff6f00,
+    0 0 12px #d84315aa;
+}
+
+.list li:hover {
+  color: #ffd54f;
+  transform: translateX(5px);
+  text-shadow:
+    0 0 10px #ff6f00,
+    0 0 20px #ff5722;
+}
+
+.item-name {
+  max-width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.item-price {
+  color: #ffd54f;
+  margin-left: 10px;
+  min-width: 70px;
+  text-align: right;
+}
+
 .menu_img img {
+  width: 400px;
   max-width: 100%;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 0 15px #d84315aa;
   object-fit: cover;
-  width: 400px; /* adjust as needed */
 }
 
 /* Responsive (stacked on mobile) */
 @media (max-width: 768px) {
   .menu_container {
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     text-align: center;
   }
 
   .menu_items,
   .menu_img {
     max-width: 100%;
+    padding: 0 5px;
+  }
+
+  .list {
+    padding: 0 10px;
   }
 
   .menu_img img {
     width: 100%;
   }
+
+  .list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .item-price {
+    align-self: flex-end;
+  }
 }
+
