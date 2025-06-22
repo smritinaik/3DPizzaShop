@@ -451,11 +451,60 @@ model-viewer {
 @media (max-width: 768px) {
   .visit_text {
     font-size: 2.4rem;
-    margin-bottom: 30px;
+ 
   }
 
   model-viewer {
+    padding-top: 0;
     width: 95vw;
-    height: 50vh;
+    height: 60vh;
   }
 }
+
+
+
+
+
+
+
+/* ---------------------------FOOTER---------------------- */
+
+.site_footer {
+  text-align: center;
+  padding: 30px 10px;
+  background: #1a0900;
+  color: #ffebc1;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px #d84315;
+  border-top: 1px solid #ff6f00;
+}
+
+.footer_name {
+  color: #ffd54f;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer_name:hover {
+  color: #ff7043;
+  text-shadow: 0 0 10px #ff6f00;
+}
+
+.footer_icons {
+  margin-top: 10px;
+}
+
+.footer_icons a {
+  margin: 0 10px;
+  font-size: 1.4rem;
+  color: #ffd54f;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer_icons a:hover {
+  color: #ff5722;
+  transform: scale(1.2);
+}
+
