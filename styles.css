@@ -492,9 +492,15 @@ model-viewer {
   text-shadow: 0 0 10px #ff6f00;
 }
 
-.footer_icons {
-  margin-top: 10px;
+.footer_icons a {
+  margin: 0 10px;
+  font-size: 1.8rem;
+  color: #ffd54f;
+  text-decoration: none; /* This removes the line */
+  display: inline-block;  /* Prevents weird text behavior */
+  transition: color 0.3s, transform 0.3s;
 }
+
 
 .footer_icons a {
   margin: 0 10px;
