@@ -334,12 +334,11 @@ model-viewer {
 }
 
 .top_heading {
-  padding-top: 13%;
-  margin-bottom: 40px;
-  font-size: 2rem;
+  font-size: 3.3rem;
   color: #ff7043;
   letter-spacing: 4px;
   padding-top: 12%;
+  padding-bottom: 7%;
   display: flex;
   justify-content: center;
   align-items: center;
