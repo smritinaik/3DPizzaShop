@@ -420,3 +420,43 @@ model-viewer {
     margin-bottom: 25px;
   }
 }
+/* ----------VISIT SEC------------- */
+.visit_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 5%;
+  text-align: center;
+}
+
+.visit_text {
+  /* padding-top: 3%; */
+  font-size: 4.8rem;
+  color: #ffebc1;
+  letter-spacing: 2.5px;
+  margin-bottom: 40px;
+  text-shadow:
+    0 0 10px #ff6f00,
+    0 0 25px #d84315,
+    0 0 45px #ff5722;
+}
+
+model-viewer {
+  width: 80vw;
+  height: 60vh;
+  max-width: 1000px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .visit_text {
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+  }
+
+  model-viewer {
+    width: 95vw;
+    height: 50vh;
+  }
+}
