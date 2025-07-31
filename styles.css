@@ -19,7 +19,7 @@ body {
   width: 85%;
   max-width: 1200px;
   background: rgba(26, 0, 0, 0.6);
-  /* same tone as body, transparent */
+
   backdrop-filter: blur(10px);
   border: 1.2px solid #ff6f00;
   border-radius: 39px;
@@ -32,14 +32,6 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
-/* will be a image */
-/* .nav-logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #ffd54f;
-  text-shadow: 0 0 10px #ff6f00aa;
-} */
 
 .nav-links {
   list-style: none;
@@ -146,7 +138,7 @@ body {
 
 model-viewer {
   width: 109vw;
-  height: 35vw;
+  height: 35vw; 
 }
 
 /* Media Queries HERO SEC */
@@ -173,7 +165,7 @@ model-viewer {
   }
 
   model-viewer {
-    padding-top: 16vw;
+    padding-top: 19vw;
     width: 85vw;
     height: 50vh;
   }
@@ -258,7 +250,7 @@ model-viewer {
 }
 
 .list li:hover {
-  color: #ffd54f;
+  color: #e7cd0a;
   transform: translateX(5px);
   text-shadow:
     0 0 10px #ff6f00,
@@ -403,7 +395,7 @@ model-viewer {
 }
 
 .rating {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #ffd54f;
 }
 
@@ -419,6 +411,7 @@ model-viewer {
     margin-bottom: 25px;
   }
 }
+
 /* ----------VISIT SEC------------- */
 .visit_section {
   display: flex;
@@ -451,7 +444,7 @@ model-viewer {
 @media (max-width: 768px) {
   .visit_text {
     font-size: 2.4rem;
- 
+
   }
 
   model-viewer {
@@ -496,8 +489,10 @@ model-viewer {
   margin: 0 10px;
   font-size: 1.8rem;
   color: #ffd54f;
-  text-decoration: none; /* This removes the line */
-  display: inline-block;  /* Prevents weird text behavior */
+  text-decoration: none;
+  /* This removes the line */
+  display: inline-block;
+  /* Prevents weird text behavior */
   transition: color 0.3s, transform 0.3s;
 }
 
@@ -513,4 +508,3 @@ model-viewer {
   color: #ff5722;
   transform: scale(1.2);
 }
-
